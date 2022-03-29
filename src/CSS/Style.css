@@ -61,6 +61,11 @@ button:hover {
   padding: 10px 18px;
   background-color: #f44336;
 }
+.signUPPER {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #0bb6d4;
+  }
 
 /* Center the image and position the close button */
 .imgcontainer {
@@ -150,11 +155,12 @@ span.psw {
 }
 
 .pageOpen{
-    float: right;
+   
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+    
     
 
 }
