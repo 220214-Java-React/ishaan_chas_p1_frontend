@@ -160,7 +160,16 @@ span.psw {
     margin-left: auto;
     margin-right: auto;
     width: 40%
-    
-    
 
+}
+
+.circle{
+    
+    height: 100px;
+    width: 100px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%; /* may require vendor prefixes */
+   
 }
