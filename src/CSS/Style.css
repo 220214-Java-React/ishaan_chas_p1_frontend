@@ -74,6 +74,11 @@ button:hover {
   position: relative;
 }
 
+.imgbox {
+  text-align: left;
+  width: 30%;
+}
+
 img.avatar {
   width: 40%;
   border-radius: 50%;
