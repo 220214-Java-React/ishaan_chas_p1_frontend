@@ -27,18 +27,25 @@
         </p>
     </nav>
         <div class="white-box">
-        <h1>Expense Reimbusement Form</h1>
+        <h1 style="text-align:center;">Expense Reimbusement Form</h1>
         
-        <label for="expenses">Expenses:</label>
-        <select name="expenses" id="expenses">
-            <option value="food" id="food">Food</option>
-            <option value="travel" id="Travel">Travel</option>
-            <option value="lodging" id="Lodging">Lodging</option>
-            <option value="other" id="other">Other</option>
-        </select>       
+        <div class="box">
+            <label for="name">Name:</label>
+            <input type="email" placeholder="Enter name" name="name" size="30">
+            <br><br>
+            <label for="expenses">Expenses:</label>
+                <select name="expenses" id="expenses">
+                    <option value="food" id="food">Food</option>
+                    <option value="travel" id="Travel">Travel</option>
+                    <option value="lodging" id="Lodging">Lodging</option>
+                    <option value="other" id="other">Other</option>
+                </select>
+                <br><br>
+            
+            <label for="amount">Amount:</label>
+            <input type="number" min=".01" max="1000000" placeholder="$" name="amount" size="10" required>        
         
-
-    </div>
+        </div>
 </body>
 
 </html>
