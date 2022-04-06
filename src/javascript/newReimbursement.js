@@ -1,15 +1,21 @@
 console.log(localStorage.getItem("user_ID"));
 
 
-async function employeeOptions() {
-  // var a = localStorage['user_ID']
-  // typeof a;
+async function reimbursments() {
+ 
   var author_id = +localStorage["user_ID"];
   typeof author_id;
+  
   let type_id = document.getElementById("type_id").value;
+
   let amount = document.getElementById("amount").value;
+
   let description = document.getElementById("description").value;
-  //const author_id = localStorage.getItem('user_ID');
+
+
+
+
+
   let reimbursementCreation = {
     type_id: type_id,
     amount: Number(amount),
@@ -29,8 +35,6 @@ async function employeeOptions() {
     },
     body: reimbursementJSON,
   })
-
-
 
 
 
