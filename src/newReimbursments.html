@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/Style.css">
-
+<script src="javascript/newReimbursement.js " defer></script>
     <title>
         Reimbursment Form
     </title>
@@ -27,10 +27,10 @@
 
         <div class="box">
             <label for="name">Name:</label>
-            <input type="email" placeholder="Enter name" name="name" size="30">
+            <input type="email" placeholder="Enter name" name="name" size="30" id="description" >
             <br><br>
             <label for="expenses">Expenses:</label>
-            <select name="expenses" id="expenses">
+            <select name="expenses" id="type_id">
                 <option value="food" id="food">Food</option>
                 <option value="travel" id="Travel">Travel</option>
                 <option value="lodging" id="Lodging">Lodging</option>
@@ -39,8 +39,9 @@
             <br><br>
 
             <label for="amount">Amount:</label>
-            <input type="number" min=".01" max="1000000" placeholder="$" name="amount" size="10" required>
-
+            <input type="number" min=".01" max="1000000" placeholder="$" name="amount" size="10" id="amount" required>
+                <br> <br>
+                <button id="submitbutton" onclick=employeeOptions()>Submit Form</button>
         </div>
 </body>
 
