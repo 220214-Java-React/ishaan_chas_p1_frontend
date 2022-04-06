@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/Style.css">
+    <script src="javascript/login.js"></script>
     <title>
 LOGING/SINGUP
 </title>
@@ -30,14 +31,14 @@ LOGING/SINGUP
                 <img src="Brandon LOGO.png">
             </div>
 
-            <div class="container">
+            <div class="container" id="login">
                 <label for="username"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="username" id="username" required>
 
                 <label for="password"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" id="password" required>
 
-                <input type="submit" id="login" value="login" >
+                <input type="submit" id="submit" value="login" onclick=loginUser()>
                 <label>
                     <input type="checkbox" checked="checked" name="remember" > Remember me
                     
