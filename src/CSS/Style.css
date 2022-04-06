@@ -65,11 +65,13 @@ button:hover {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
+
 }
 .signUPPER {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #0bb6d4;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #0bb6d4;
+  border-radius: 12px;
   }
 
 /* Center the image and position the close button */
@@ -234,6 +236,7 @@ tr:nth-child(even) {
   color: #999466;
   text-align: center;
   text-shadow: 5px 5px 10px #000;
+  
 
   
 }
