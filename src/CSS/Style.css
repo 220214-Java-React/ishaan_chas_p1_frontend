@@ -15,9 +15,11 @@ html{
 
   }
 
-  navs a:hover:not(.active) {
-    background-color: #41B3a3;
+  .navs a:hover:not(.active) {
+    background-color: #525252;
+    border-radius: 12px;
   }
+  
   .active {
     background-color: #000000;
   }
@@ -63,11 +65,13 @@ button:hover {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
+
 }
 .signUPPER {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #0bb6d4;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #0bb6d4;
+  border-radius: 12px;
   }
 
 /* Center the image and position the close button */
@@ -224,4 +228,15 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dfdfdf;
+}
+
+.intro {
+  font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 100px;
+  color: #999466;
+  text-align: center;
+  text-shadow: 5px 5px 10px #000;
+  
+
+  
 }
