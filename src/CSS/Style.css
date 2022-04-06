@@ -19,7 +19,7 @@ html{
     background-color: #41B3a3;
   }
   .active {
-    background-color: #659dbd;
+    background-color: #000000;
   }
   .topPage {
     list-style-type: none;
@@ -32,7 +32,6 @@ html{
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #f9f9f9;
 }
 
 /* Full-width input fields */
@@ -224,5 +223,5 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #d1d1d1;
+  background-color: #dfdfdf;
 }
