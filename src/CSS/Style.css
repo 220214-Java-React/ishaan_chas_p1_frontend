@@ -227,3 +227,13 @@ td, th {
 tr:nth-child(even) {
   background-color: #dfdfdf;
 }
+
+.intro {
+  font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 100px;
+  color: #999466;
+  text-align: center;
+  text-shadow: 5px 5px 10px #000;
+
+  
+}
