@@ -1,6 +1,6 @@
 const baseURL = "http://127.0.0.1:5500/src/"
 const thisURL = window.location.href;
-const url = "http://localhost:8080/UserServlet"
+const url = "http://localhost:8080/userservlet"
 
 let registerButton = document.getElementById("registerButton");
 registerButton.addEventListener("click", registerFunction, false);
@@ -10,12 +10,12 @@ async function registerFunction()
 {
     let userObj =
     {
-        username: document.getElementById("userIdCreation").value,
-        password: document.getElementById("passwordIdCreationVerify").value,
-        email: document.getElementById("emailCreation").value,
-        givenName: document.getElementById("givenNameId").value,
-        surname: document.getElementById("surnameId").value,
-        roleId: document.getElementById("roleIdId").value
+        username: document.getElementById("username").value,
+        password: document.getElementById("password").value,
+        email: document.getElementById("email").value,
+        givenName: document.getElementById("givenName").value,
+        surname: document.getElementById("surname").value,
+        roleId: document.getElementById("roleId").value
     }
 
     let nonNull = Object.values(userObj).every(value =>
@@ -27,7 +27,7 @@ async function registerFunction()
     })
 
     if (nonNull) {
-        await fetch('http://localhost:8080/UserServlet',
+        await fetch('http://localhost:8080/userservlet',
             {
                 method: 'POST',
                 headers:{"Content-type":"application/json"},
