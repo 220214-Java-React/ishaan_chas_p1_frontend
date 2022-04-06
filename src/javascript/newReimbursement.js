@@ -1,4 +1,6 @@
 console.log(localStorage.getItem("user_ID"));
+
+
 async function employeeOptions() {
   // var a = localStorage['user_ID']
   // typeof a;
@@ -12,20 +14,26 @@ async function employeeOptions() {
     type_id: type_id,
     amount: Number(amount),
     description: description,
+    author_id: author_id,
+    payment_id: 3,
+
     
   };
 
   const reimbursementJSON = JSON.stringify(reimbursementCreation);
   console.log(reimbursementJSON);
-  let data = await fetch('http://localhost:8080/reimbursment/*', {
+  let data = await fetch('http://localhost:8080/reimbursment', {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: reimbursementJSON,
   })
-//   .then(response => response.json())
-//   .catch((error) => console.log(error));
+
+
+
+
+
 
   console.log(reimbursementJSON);
 

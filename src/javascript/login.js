@@ -37,11 +37,11 @@ async function loginUser() {
 
 function getData(data){
 
-    let {user_id, role_id1 } = data;
+    let {user_ID, role_id1 } = data;
         console.log(data);
 
         localStorage.setItem('role_id1', role_id1);
-        localStorage.setItem('user_id', user_id);
+        localStorage.setItem('user_ID', user_ID);
 
         switch (role_id1) {
 
