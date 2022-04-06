@@ -1,5 +1,5 @@
 html{
-    background-color:#fbeec1 ;
+    background-color:#356965 ;
 }
 
 .navs {
@@ -26,11 +26,14 @@ html{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #bc986a;
+  background-color: #c45c16;
   border-radius: 12px;
   }
 
-  body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f9f9f9;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -190,6 +193,7 @@ span.psw {
   margin: 5% auto 15% auto;
   border: 7px solid rgb(87, 87, 87);
   width: 80%;
+  border-radius: 25px;
 }
 
 .dropdown-content {
@@ -204,4 +208,21 @@ span.psw {
 
 .box {
   padding: 16px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+td, th {
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #d1d1d1;
 }
