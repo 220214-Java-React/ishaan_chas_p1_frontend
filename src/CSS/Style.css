@@ -15,9 +15,11 @@ html{
 
   }
 
-  navs a:hover:not(.active) {
-    background-color: #41B3a3;
+  .navs a:hover:not(.active) {
+    background-color: #525252;
+    border-radius: 12px;
   }
+  
   .active {
     background-color: #000000;
   }
