@@ -1,21 +1,24 @@
 console.log(localStorage.getItem("user_ID"));
 
 
+
+// creation of reimbursment function
 async function reimbursments() {
  
   var author_id = +localStorage["user_ID"];
   typeof author_id;
-  
-  let type_id = document.getElementById("type_id").value;
 
+  //Get the type of reimburstment food, lodging, travel
+  let type_id = document.getElementById("type_id").value; 
+//the amount that needs to be reimbursted
   let amount = document.getElementById("amount").value;
-
+//the name type of the reimburstment or description
   let description = document.getElementById("description").value;
 
 
 
 
-
+// the actual creation of reimbursment let
   let reimbursementCreation = {
     type_id: type_id,
     amount: Number(amount),
@@ -25,7 +28,7 @@ async function reimbursments() {
 
     
   };
-
+//the push 
   const reimbursementJSON = JSON.stringify(reimbursementCreation);
   console.log(reimbursementJSON);
   let data = await fetch('http://localhost:8080/reimbursment', {
