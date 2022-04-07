@@ -1,6 +1,6 @@
-const baseURL = "http://127.0.0.1:5500/src/"
+
 const thisURL = window.location.href;
-const url = "http://localhost:8080/userservlet"
+
 
 let registerButton = document.getElementById("registerButton");
 registerButton.addEventListener("click", registerFunction, false);
